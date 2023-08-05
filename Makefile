@@ -1,5 +1,5 @@
+all: build run
 build:
-	javac src/main/java/org/example/Main.java -d target
+	javac -d target -s src src/main/java/org/example/*.java
 run:
 	java -cp target org.example.Main
-all: build run
