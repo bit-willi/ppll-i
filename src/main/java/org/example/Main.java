@@ -8,5 +8,8 @@ public class Main {
 
         Grammar grammar = new Grammar(shell.getGrammarPath());
         grammar.run();
+
+        CoreLlI coreLlI = new CoreLlI(grammar.getGrammarTable(), shell.getInBufferPath());
+        coreLlI.run();
     }
 }

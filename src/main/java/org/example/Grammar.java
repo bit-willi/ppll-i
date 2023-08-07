@@ -144,7 +144,5 @@ public class Grammar {
         this.table.insertInTable("T'", "\n", "6");
         this.table.insertInTable("F", "id", "8");
         this.table.insertInTable("F", "(", "7");
-
-        System.out.println(this.table.getFromTable("E", "id"));
     }
 }
