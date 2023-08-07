@@ -51,6 +51,14 @@ public class Shell {
         System.out.println("--- DUMP END ---");
     }
 
+    public String getGrammarPath() {
+        return this.grammar_path;
+    }
+
+    public String getInBufferPath() {
+        return this.in_buffer_path;
+    }
+
     public void showUsage() {
         System.out.printf("Usage: java -jar bin.jar [OPTIONS] [IN_BUFFER_PATH]\n");
         System.out.printf("OPTIONS:\n");

@@ -1,0 +1,6 @@
+C  -> while B do C | cmd
+B  -> A B'
+B' -> or A B' | &
+A  -> E A'
+A' -> and E A' | &
+E  -> not E | ( B ) | exp

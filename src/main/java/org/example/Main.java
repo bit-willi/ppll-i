@@ -5,6 +5,8 @@ public class Main {
     public static void main(String[] argv) {
         Shell shell = new Shell(argv);
         shell.run();
-        shell.dump();
+
+        Grammar grammar = new Grammar(shell.getGrammarPath());
+        grammar.run();
     }
 }
