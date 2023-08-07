@@ -4,8 +4,8 @@ import java.util.ArrayDeque;
 
 public class Shell {
     private ArrayDeque<String> argv;
-    private String grammar_path;
-    private String in_buffer_path;
+    private String grammarPath;
+    private String inBufferPath;
 
     public Shell(String[] args) {
         super();
@@ -34,11 +34,11 @@ public class Shell {
                     }
 
                     String arg = this.argv.remove();
-                    this.grammar_path = arg;
+                    this.grammarPath = arg;
                     break;
 
                 default:
-                    this.in_buffer_path = flag;
+                    this.inBufferPath = flag;
                     break;
             }
         }
@@ -46,17 +46,17 @@ public class Shell {
 
     public void dump() {
         System.out.println("--- DUMP ---");
-        System.out.println(this.grammar_path);
-        System.out.println(this.in_buffer_path);
+        System.out.println(this.grammarPath);
+        System.out.println(this.inBufferPath);
         System.out.println("--- DUMP END ---");
     }
 
     public String getGrammarPath() {
-        return this.grammar_path;
+        return this.grammarPath;
     }
 
     public String getInBufferPath() {
-        return this.in_buffer_path;
+        return this.inBufferPath;
     }
 
     public void showUsage() {
