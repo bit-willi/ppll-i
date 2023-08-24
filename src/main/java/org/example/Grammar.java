@@ -52,7 +52,6 @@ public class Grammar {
         return c;
     }
 
-
     public void tokenize() {
         this.loadSource();
 
